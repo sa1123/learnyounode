@@ -1,7 +1,9 @@
 const net = require('net');
 
 const server = net.createServer(function (socket){
+    
     let date = new Date();
+
     let year = date.getFullYear();
     let month = addZero(date.getMonth() + 1);
     let day = addZero(date.getDate());
